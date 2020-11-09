@@ -9,21 +9,44 @@
 </head>
 
 <body>
-    <h1 id="question" style="font-size: 2em;"></h1>
-    <h2 id="poll-id-heading"></h2>
-    <div class="container" style="width: 100%;">
-    <div class="chart-container">
-        <canvas id="myChart" height="200"></canvas>
+    <section id="navbar">
+        <!-- Logo will go here -->
+        <img class="logo" src="Prototype/Desktop/logo_transparent(SVG).svg" alt="Logo" height="200px" width="auto">
+        <nav id="nav">
+            <ul>
+                <li><a href="#.html">Help</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="forms.html">Login</a></li>
+            </ul>
+        </nav>
+    </section>
+    <section class="chart-wrapper">
+        <div class="charts">
+        <h1 id="question" style="font-size: 2em;"></h1>
+        <h2 id="poll-id-heading"></h2>
+        <div class="container" style="width: 100%;">
+            <div class="chart-container">
+                <canvas id="myChart" height="200"></canvas>
+            </div>
+            <div class="chart-container">
+                <canvas id="pieChart" height="200"></canvas>
+            </div>
+        </div>
     </div>
-    
-    <div class="chart-container">
-        <canvas id="pieChart" height="200"></canvas>
-    </div>
-    </div>
+    <div class="radio">
+        <div class="radio-btns">
+            <input type="radio" id="bar-chart" name="gender" value="bar-chart" selected>
+            <label for="bar-chart">Bar Chart</label><br>
+            <input type="radio" id="pie-chart" name="gender" value="pie-chart">
+            <label for="pie-chart">Pie Chart</label><br>
+        </div>
+        <div class="pollID-container">
+            <h2>Poll ID: <span style="background-color: #e9e9e9;  padding: 4px; border-radius: 7px;">1234455</span><span style="background-color: #898989; padding: 4px;border-radius: 3px;">&#128203;</span></h2>
+        </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
-        integrity="sha512-s+xg36jbIujB2S2VKfpGmlC3T5V2TF3lY48DX7u2r9XzGzgPsa6wTpOQA7J9iffvdeBN0q9tKzRxVxw1JviZPg=="
-        crossorigin="anonymous"></script>
+    </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha512-s+xg36jbIujB2S2VKfpGmlC3T5V2TF3lY48DX7u2r9XzGzgPsa6wTpOQA7J9iffvdeBN0q9tKzRxVxw1JviZPg==" crossorigin="anonymous"></script>
     <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>

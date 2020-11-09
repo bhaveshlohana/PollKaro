@@ -5,10 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create New Poll</title>
+    
     <link rel="stylesheet" href="css/create_new.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+    <section id="navbar">
+        <!-- Logo will go here -->
+        <img class="logo" src="Prototype/Desktop/logo_transparent(SVG).svg" alt="Logo" height="200px" width="auto">
+        <nav id="nav">
+            <ul>
+                <li><a href="#.html">Help</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="forms.html">Login</a></li>
+            </ul>
+        </nav>
+    </section>
+    <section class="create-container">
     <h1>Create A New Poll</h1>
 
     <form class="new-poll-form">
@@ -24,7 +38,7 @@
             <button type="submit" class="submit-btn">Create</button>
         </div>
     </form>
-
+    </section>
     <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
